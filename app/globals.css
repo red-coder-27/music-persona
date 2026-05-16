@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.12), transparent 22%),
+    linear-gradient(180deg, #050505 0%, #09090b 40%, #040404 100%);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::selection {
+  background: rgba(236, 72, 153, 0.4);
+  color: #fff;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-black/40;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-fuchsia-400 via-pink-400 to-orange-300 bg-clip-text text-transparent;
+}
+
+.page-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
+
+.theme-nocturnal-dreamer {
+  background: linear-gradient(145deg, #24104f, #0f1a4d 58%, #050816);
+}
+
+.theme-hype-machine {
+  background: linear-gradient(145deg, #f7e70b, #f97316 58%, #111111);
+}
+
+.theme-emotional-architect {
+  background: linear-gradient(145deg, #fb7185, #8b5cf6 58%, #140b1a);
+}
+
+.theme-indie-wanderer {
+  background: linear-gradient(145deg, #14532d, #8b5a2b 58%, #0c0a09);
+}
+
+.theme-bass-addict {
+  background: linear-gradient(145deg, #2563eb, #ec4899 58%, #09090b);
+}
+
+.theme-genre-scientist {
+  background: linear-gradient(145deg, #14b8a6, #10b981 58%, #081018);
+}
+
+.theme-heartbreak-connoisseur {
+  background: linear-gradient(145deg, #7f1d1d, #111827 58%, #030712);
+}
+
+.theme-mainstream-maven {
+  background: linear-gradient(145deg, #facc15, #ffffff 58%, #111111);
+}
+
+.theme-nocturnal-dreamer-card {
+  background: linear-gradient(145deg, rgba(36, 16, 79, 0.95), rgba(15, 26, 77, 0.9) 58%, rgba(5, 8, 22, 0.98));
+}
+
+.theme-hype-machine-card {
+  background: linear-gradient(145deg, rgba(247, 231, 11, 0.95), rgba(249, 115, 22, 0.9) 58%, rgba(17, 17, 17, 0.98));
+}
+
+.theme-emotional-architect-card {
+  background: linear-gradient(145deg, rgba(251, 113, 133, 0.95), rgba(139, 92, 246, 0.9) 58%, rgba(20, 11, 26, 0.98));
+}
+
+.theme-indie-wanderer-card {
+  background: linear-gradient(145deg, rgba(20, 83, 45, 0.95), rgba(139, 90, 43, 0.9) 58%, rgba(12, 10, 9, 0.98));
+}
+
+.theme-bass-addict-card {
+  background: linear-gradient(145deg, rgba(37, 99, 235, 0.95), rgba(236, 72, 153, 0.9) 58%, rgba(9, 9, 11, 0.98));
+}
+
+.theme-genre-scientist-card {
+  background: linear-gradient(145deg, rgba(20, 184, 166, 0.95), rgba(16, 185, 129, 0.9) 58%, rgba(8, 16, 24, 0.98));
+}
+
+.theme-heartbreak-connoisseur-card {
+  background: linear-gradient(145deg, rgba(127, 29, 29, 0.95), rgba(17, 24, 39, 0.9) 58%, rgba(3, 7, 18, 0.98));
+}
+
+.theme-mainstream-maven-card {
+  background: linear-gradient(145deg, rgba(250, 204, 21, 0.95), rgba(255, 255, 255, 0.85) 58%, rgba(17, 17, 17, 0.98));
+}
+
+.share-card-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
